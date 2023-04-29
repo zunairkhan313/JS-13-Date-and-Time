@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+//Question 1 
+        var date =new Date()
+        console.log(date);
+     //Question 1 end
+     
+     //Question 2
+var arr = ['january','february','march','april','may','june','july','august','september','october','november','december']
+     var cr = new Date();
+     var month = cr.getMonth();
+     var current =arr[month];
+     console.log(current);
+     //Question 2 end
+     //Question 3
+var day = ['sunday','monday','tuesday','wednesday','thursday','friday','satuarday']
+     var date1 = new Date();
+     var $date1 =date1.getDay()
+     var crday = day[$date1]
+     console.log(crday);
+     //Question 3 end
+     //Question 4
+     
+     var days = ['sunday','monday','tuesday','wednesday','thursday','friday','satuarday'];
+       var days1 = new Date();
+     var $days1 =days1.getDay()
+     var crday1 = days[$days1]
+     if(crday1==days[0]||crday1==days[6]){
+        console.log("It's Fun Day");
+     }
+     else{
+        console.log("Not your day");
+     }
+     //Question 4 end
+     //Question 5 
+
+var pasha = new Date()
+var pasha1 =pasha.getDate();
+if(pasha1<=15){
+    console.log("first fifteen days of month");
+}
+else{
+    console.log("last days of month");
+}
+
+
+     //Question 5 end
+     //Question 6
+
+var birth = new Date("1997-Feb-3");
+var currentDate =new Date();
+var milisec =currentDate-birth;
+var sec = milisec /1000;
+var min = sec /6000;
+console.log(currentDate);
+console.log("milisec"+ " "+ milisec);
+console.log("minute"+ " "+min);
+
+     //Question 6 end
+     //Question 7
+     
+     var hour = new Date();
+     var hour1 =hour.getHours();
+     var minute =hour.getMinutes();
+     var meridiem =hour1 >= 12 ? 'PM' :'AM';
+     console.log(meridiem);
+     //Question 7 end
+    </script>
+</body>
+</html>
